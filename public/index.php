@@ -6,12 +6,18 @@ $loader = new Twig_Loader_Filesystem('../views/twig');
 $twig = new Twig_Environment($loader, array(
     'cache' => false
 ));
-
-
-
 $search = new Search();
+$website = "";
 
-$website = $search->findHuman("Bruno Skvorc");
 
-dump($website);
-//dump($website);
+
+
+
+
+if (isset($_POST['find'])) {
+    $website = $search->findHuman($_POST['find']);
+}
+
+
+echo $twig->render("form.twig");
+echo $website;
