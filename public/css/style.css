@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    margin: auto;
+    width: 60%;
+}
+
+.formDiv {
+    margin: auto;
+    margin-top: 200px;
+    width: 300px;
+}
+
+.submitButton {
+    margin-left: 40%;
+    float: left;
+}
+
+.results {
+}
+
+.results ul {
+    list-style: none;
+}
+
+.human {
+    padding-top: 23px;
+    border-bottom: 0.5px solid lightgrey;
+}
+
+.search {
+    width: 250px;
+    height: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px;
+}

@@ -8,64 +8,91 @@
 
 namespace Search;
 
+use Goutte\Client;
+use Symfony\Component\DomCrawler\Crawler;
+
 
 class Search
 {
 
     private $contents;
     private $name;
-    private $url;
+    private $FbURL;
+    private $TwitterURL;
+    private $Results = [];
 
 
     public function findHuman($name)
     {
         $this->name = $name;
-        $this->prepareUrl();
-        $this->getWebsite();
-        return $this->found();
+        $this->prepareURLforFb();
+        $this->prepareURLforTwitter();
+        $this->getFbWebsite();
+        $this->foundFb();
+        $this->foundTwitter();
+        return $this->Results;
     }
 
-    private function found()
+    private function foundFb()
     {
-        if ($this->noResults()) {
-            return "Nothing found!";
-        }
+        $crawler = new Crawler($this->contents);
 
-        $String = strstr($this->contents, '<div><div class="mbm detailedsearch_result">');
-        if ($final = strstr($String, '<div class="mvs pam clearfix uiBoxGray">', TRUE)){
-            return $final;
-        }
-        $final = strstr($String, '</div> --></code>', TRUE);
-        return $final;
-
+        $crawler->filter('.detailedsearch_result')->each(function ($node) {
+            $this->Results[] = [
+                'Name' => $node->filter('.instant_search_title')->text(),
+                'ImageURL' => $node->filter('.img')->attr('src'),
+                'ProfileURL' => $node->filter('._8o')->attr('href'),
+                'Source' => "From Facebook"
+            ];
+        });
     }
 
-    private function getWebsite()
+    private function foundTwitter()
     {
-        $ch = curl_init($this->url);
-        curl_setopt($ch, CURLOPT_POST, false);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-        curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.7.12) Gecko/20050915 Firefox/1.0.7");
-        curl_setopt($ch, CURLOPT_HEADER, false);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        $data = curl_exec($ch);
+        $client = new Client();
+        $crawler = $client->request('GET', $this->TwitterURL);
 
-        $this->contents = $data;
+        $crawler->filter('.ProfileCard')->each(function ($node) {
+            $this->Results[] = [
+                'Name' => trim($node->filter('.ProfileNameTruncated-link')->text()),
+                'Description' => $node->filter('.ProfileCard-bio')->text(),
+                'ImageURL' => $node->filter('.ProfileCard-avatarImage')->attr('src'),
+                'ProfileURL' => $node->filter('.ProfileNameTruncated-link')->attr('href'),
+                'Source' => "From Twitter"
+            ];
+        });
+
+
     }
 
-    private function prepareUrl()
+
+    private function getFbWebsite()
+    {
+        $client = new Client();
+        $crawler = $client->request('GET', $this->FbURL);
+        $faceHtml = $crawler->filter('#u_0_6')->html();
+
+        $first = strstr($faceHtml, '<div>');
+        $secound = strstr($first, ' -->', TRUE);
+
+        $this->contents = $secound;
+
+    }
+
+
+    private function prepareURLforFb()
     {
         $name = str_replace(" ", "+", $this->name);
 
-        $this->url = $url = "https://www.facebook.com/public?query=" . $name;
+        $this->FbURL = "https://www.facebook.com/public?query=" . $name;
 
     }
 
-    private function noResults()
+    private function prepareURLforTwitter()
     {
-        if (strstr($this->contents, "No results")) {
-            return true;
-        }
-        return false;
+        $name = urlencode($this->name);
+
+        $this->TwitterURL = "https://twitter.com/search?f=users&vertical=default&q=" . $name;
+
     }
 }

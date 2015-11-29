@@ -10,14 +10,11 @@ $search = new Search();
 $website = "";
 
 
-
-
-
-
 if (isset($_POST['find'])) {
     $website = $search->findHuman($_POST['find']);
 }
 
+dump($website);
 
-echo $twig->render("form.twig");
-echo $website;
+echo $twig->render("form.twig", ['websites' => $website]);
+//dump($website);

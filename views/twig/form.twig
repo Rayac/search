@@ -2,12 +2,26 @@
 
 {% block title %}Form{% endblock %}
 {% block body %}
-    <div class="formDiv">
-        <form class="form" action="/" method="post">
-            <label for="find">Find:<br><input type="text" name="find"><br></label>
-            <input class="submitButton" type="submit" id="sendMail" value="Submit">
-        </form>
-    </div>
-    <br><br>
+    <div class="content">
+        <div class="formDiv">
+            <form class="form" action="/" method="post">
+                <label for="find">Find:<input class="search" type="text" name="find"><br></label>
+                <input class="submitButton" type="submit" id="sendMail" value="Submit">
+            </form>
+        </div>
+        <br><br>
 
+        <div class="results">
+            <ul>
+                {% for website in websites %}
+                    <div class="human">
+
+                        <li><img src="{{ website['ImageURL'] }}" alt="Profile pic">
+
+                            <p>{{ website['Name'] }}</p></li>
+                    </div>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 {% endblock %}
