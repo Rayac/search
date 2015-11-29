@@ -17,17 +17,12 @@ class Search
     private $url;
 
 
-
-
     public function findHuman($name)
     {
         $this->name = $name;
         $this->prepareUrl();
         $this->getWebsite();
         return $this->found();
-
-
-
     }
 
     private function found()
@@ -37,8 +32,10 @@ class Search
         }
 
         $String = strstr($this->contents, '<div><div class="mbm detailedsearch_result">');
-        $final =strstr($String, '<div class="mvs pam clearfix uiBoxGray">', TRUE);
-
+        if ($final = strstr($String, '<div class="mvs pam clearfix uiBoxGray">', TRUE)){
+            return $final;
+        }
+        $final = strstr($String, '</div> --></code>', TRUE);
         return $final;
 
     }
@@ -60,7 +57,7 @@ class Search
     {
         $name = str_replace(" ", "+", $this->name);
 
-        $this->url = $url = "https://www.facebook.com/public?query=" . $name;;
+        $this->url = $url = "https://www.facebook.com/public?query=" . $name;
 
     }
 
