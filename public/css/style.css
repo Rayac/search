@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+body{
+    background-color: #f5f8fa;
+}
+
 .content {
     margin: auto;
     width: 60%;
@@ -17,6 +21,7 @@
 .submitButton {
     margin-left: 40%;
     float: left;
+    display: none;
 }
 
 .results {
@@ -27,8 +32,27 @@
 }
 
 .human {
-    padding-top: 23px;
-    border-bottom: 0.5px solid lightgrey;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    height: 100px;
+    background-color: white;
+}
+
+.human img{
+    margin-top: -50px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.human span{
+    font-weight: bold;
+}
+
+.human p{
+    margin-left: 20px;
 }
 
 .search {

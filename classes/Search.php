@@ -28,8 +28,8 @@ class Search
         $this->prepareURLforFb();
         $this->prepareURLforTwitter();
         $this->getFbWebsite();
-        $this->foundFb();
         $this->foundTwitter();
+        $this->foundFb();
         return $this->Results;
     }
 
@@ -45,6 +45,7 @@ class Search
                 'Source' => "From Facebook"
             ];
         });
+
     }
 
     private function foundTwitter()
@@ -61,8 +62,6 @@ class Search
                 'Source' => "From Twitter"
             ];
         });
-
-
     }
 
 
@@ -70,12 +69,11 @@ class Search
     {
         $client = new Client();
         $crawler = $client->request('GET', $this->FbURL);
-        $faceHtml = $crawler->filter('#u_0_6')->html();
-
-        $first = strstr($faceHtml, '<div>');
-        $secound = strstr($first, ' -->', TRUE);
-
-        $this->contents = $secound;
+        if ($faceHtml = $crawler->filter('#u_0_6')->html()) {
+            $first = strstr($faceHtml, '<div>');
+            $secound = strstr($first, ' -->', TRUE);
+            $this->contents = $secound;
+        }
 
     }
 

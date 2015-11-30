@@ -14,12 +14,12 @@
         <div class="results">
             <ul>
                 {% for website in websites %}
-                    <div class="human">
+                   <li> <div class="human">
 
-                        <li><img src="{{ website['ImageURL'] }}" alt="Profile pic">
+                        <img src="{{ website['ImageURL'] }}" alt="Profile pic">
 
-                            <p>{{ website['Name'] }}</p></li>
-                    </div>
+                            <p><span>Name:</span> {{ website['Name'] }}<br><span>Description:</span> {{ website['Description'] }}</p>
+                    </div></li>
                 {% endfor %}
             </ul>
         </div>
