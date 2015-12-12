@@ -8,99 +8,21 @@
 
 namespace Search;
 
-use Exception;
-use Goutte\Client;
-use Symfony\Component\DomCrawler\Crawler;
-
+use Search\searchFb;
+use Search\searchTwitter;
 
 class Search
 {
-
-    private $contents;
-    private $name;
-    private $FbURL;
-    private $TwitterURL;
     private $Results = [];
 
 
     public function findHuman($name)
     {
-        $this->name = $name;
-        $this->prepareURLforFb();
-        $this->prepareURLforTwitter();
-        $this->getFbWebsite();
-        $this->foundTwitter();
-        $this->foundFb();
+        $result = new searchTwitter($name);
+        $this->Results['Twitter'] = $result->returnResults();
+        $result = new searchFb($name);
+        $this->Results['Facebook'] = $result->returnResults();
         return $this->Results;
     }
 
-    private function foundFb()
-    {
-        if (is_string($this->contents)) {
-            $crawler = new Crawler($this->contents);
-            $crawler->filter('.detailedsearch_result')->each(function ($node) {
-                $this->Results[] = [
-                    'Name' => $node->filter('.instant_search_title')->text(),
-                    'ImageURL' => $node->filter('.img')->attr('src'),
-                    'ProfileURL' => $node->filter('._8o')->attr('href'),
-                    'Source' => "From Facebook"
-                ];
-            });
-        }
-    }
-
-    private function foundTwitter()
-    {
-        $client = new Client();
-        $crawler = $client->request('GET', $this->TwitterURL);
-
-        $crawler->filter('.ProfileCard')->each(function ($node) {
-            $this->Results[] = [
-                'Name' => trim($node->filter('.ProfileNameTruncated-link')->text()),
-                'Description' => $node->filter('.ProfileCard-bio')->text(),
-                'ImageURL' => $node->filter('.ProfileCard-avatarImage')->attr('src'),
-                'ProfileURL' => $node->filter('.ProfileNameTruncated-link')->attr('href'),
-                'Source' => "From Twitter"
-            ];
-        });
-    }
-
-
-    private function getFbWebsite()
-    {
-        $client = new Client();
-        $crawler = $client->request('GET', $this->FbURL);
-        try {
-            if ($faceHtml = $crawler->filter('#u_0_6')->html()) {
-                $first = strstr($faceHtml, '<div>');
-                $secound = strstr($first, ' -->', TRUE);
-                $this->contents = $secound;
-            }
-        } catch (Exception $e) {
-        }
-    }
-
-
-    private function prepareURLforFb()
-    {
-        $name = str_replace(" ", "+", $this->name);
-
-        $this->FbURL = "https://www.facebook.com/public?query=" . $name;
-    }
-
-    private function prepareURLforTwitter()
-    {
-        $name = urlencode($this->name);
-
-        $this->TwitterURL = "https://twitter.com/search?f=users&vertical=default&q=" . $name;
-    }
-
-//    try {
-//    if (isset($_POST['rPass'])) {
-//    $pass = new vo\Pass($_POST['rPass']);
-//    }
-//
-//    } catch (Exception $e) {
-//        $errors[] = $e->getMessage();
-//    }
 }

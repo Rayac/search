@@ -14,12 +14,19 @@
         <div class="results">
             <ul>
                 {% for website in websites %}
-                   <li> <div class="human">
+                    {% for websit in website %}
+                    <li>
+                        <div class="human">
 
-                        <img src="{{ website['ImageURL'] }}" alt="Profile pic">
-
-                            <p><span>Name:</span> {{ website['Name'] }}<br><span>Description:</span> {{ website['Description'] }}</p>
-                    </div></li>
+                            <img src="{{ websit['ImageURL'] }}" alt="Profile pic">
+                            <p>
+                            <span>Name:</span> {{ websit['Name'] }}
+                                {% if websit['Description'] %}<br><span>Description:</span> {{ websit['Description'] }} {% endif %}
+                                {% if websit['links'] %}<br><span>Description:</span> {{ websit['links'] }} {% endif %}
+                            </p>
+                        </div>
+                    </li>
+                        {% endfor %}
                 {% endfor %}
             </ul>
         </div>
