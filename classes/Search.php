@@ -8,6 +8,7 @@
 
 namespace Search;
 
+use Exception;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
@@ -35,17 +36,17 @@ class Search
 
     private function foundFb()
     {
-        $crawler = new Crawler($this->contents);
-
-        $crawler->filter('.detailedsearch_result')->each(function ($node) {
-            $this->Results[] = [
-                'Name' => $node->filter('.instant_search_title')->text(),
-                'ImageURL' => $node->filter('.img')->attr('src'),
-                'ProfileURL' => $node->filter('._8o')->attr('href'),
-                'Source' => "From Facebook"
-            ];
-        });
-
+        if (is_string($this->contents)) {
+            $crawler = new Crawler($this->contents);
+            $crawler->filter('.detailedsearch_result')->each(function ($node) {
+                $this->Results[] = [
+                    'Name' => $node->filter('.instant_search_title')->text(),
+                    'ImageURL' => $node->filter('.img')->attr('src'),
+                    'ProfileURL' => $node->filter('._8o')->attr('href'),
+                    'Source' => "From Facebook"
+                ];
+            });
+        }
     }
 
     private function foundTwitter()
@@ -69,12 +70,14 @@ class Search
     {
         $client = new Client();
         $crawler = $client->request('GET', $this->FbURL);
-        if ($faceHtml = $crawler->filter('#u_0_6')->html()) {
-            $first = strstr($faceHtml, '<div>');
-            $secound = strstr($first, ' -->', TRUE);
-            $this->contents = $secound;
+        try {
+            if ($faceHtml = $crawler->filter('#u_0_6')->html()) {
+                $first = strstr($faceHtml, '<div>');
+                $secound = strstr($first, ' -->', TRUE);
+                $this->contents = $secound;
+            }
+        } catch (Exception $e) {
         }
-
     }
 
 
@@ -83,7 +86,6 @@ class Search
         $name = str_replace(" ", "+", $this->name);
 
         $this->FbURL = "https://www.facebook.com/public?query=" . $name;
-
     }
 
     private function prepareURLforTwitter()
@@ -91,6 +93,14 @@ class Search
         $name = urlencode($this->name);
 
         $this->TwitterURL = "https://twitter.com/search?f=users&vertical=default&q=" . $name;
-
     }
+
+//    try {
+//    if (isset($_POST['rPass'])) {
+//    $pass = new vo\Pass($_POST['rPass']);
+//    }
+//
+//    } catch (Exception $e) {
+//        $errors[] = $e->getMessage();
+//    }
 }
