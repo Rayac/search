@@ -1,5 +1,6 @@
 <?php
 require '../vendor/autoload.php';
+use Carbon\Carbon;
 use Rayac\Database;
 use Rayac\Search;
 
