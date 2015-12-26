@@ -52,7 +52,7 @@ CREATE TABLE `People` (
   `ProfileURL` text,
   `SearchID` int(11) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=291 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1114 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,9 +66,10 @@ CREATE TABLE `Search_history` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `Search` varchar(45) DEFAULT NULL,
   `Date` datetime DEFAULT NULL,
+  `SearchData` text,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `Search_UNIQUE` (`Search`)
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=141 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -80,4 +81,4 @@ CREATE TABLE `Search_history` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-12-13 17:58:31
+-- Dump completed on 2015-12-26 15:54:24
