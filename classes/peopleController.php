@@ -9,8 +9,9 @@ class peopleController
 {
     public function action (Request $request, Response $response, array $args)
     {
-
-        dump($args);
+        echo $args['email'];
         return $response;
     }
+
+
 }

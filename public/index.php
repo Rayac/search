@@ -1,21 +1,16 @@
 <?php
 require '../vendor/autoload.php';
-use Carbon\Carbon;
-use Rayac\Database;
-use Rayac\Search;
 
-$loader = new Twig_Loader_Filesystem('../views/twig');
-$twig = new Twig_Environment($loader, array(
-    'cache' => false
-));
-$pdo = Database::getPDO();
-$search = new Search($pdo);
-$website = "";
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
+$router = new League\Route\RouteCollection;
 
-if (isset($_POST['find'])) {
-    $website = $search->searchFor($_POST['find']);
-}
+$router->addRoute('GET', '/', 'Rayac\searchController::action');
+$router->addRoute('POST', '/', 'Rayac\searchController::find');
+$router->addRoute('GET', '/{email}', 'Rayac\peopleController::action');
 
-
-echo $twig->render("form.twig", ['websites' => $website]);
+$dispatcher = $router->getDispatcher();
+$request = Request::createFromGlobals();
+$response = $dispatcher->dispatch($request->getMethod(), $request->getPathInfo());
+$response->send();

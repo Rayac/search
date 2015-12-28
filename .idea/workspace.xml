@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d693c9c8-92cd-4c73-b019-b8878b1a37f7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database.sql" afterPath="$PROJECT_DIR$/database.sql" />
+      <change type="DELETED" beforePath="G:\VM\search_nino\search\classes\searchHistory.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/peopleController.php" afterPath="$PROJECT_DIR$/classes/peopleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/searchController.php" afterPath="$PROJECT_DIR$/classes/searchController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="search.iws" />
@@ -28,10 +31,10 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding>
-                <element signature="e#40#58#0#PHP" expanded="true" />
+                <element signature="e#41#86#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,29 +53,17 @@
       <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-37.923077">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state vertical-scroll-proportion="-17.653847">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="e#25#43#0#PHP" expanded="true" />
-                <marker date="1451144709736" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
-                <marker date="1451144709736" expanded="true" signature="1382:1434" placeholder="SELECT Name,..People..." />
-                <marker date="1451144709736" expanded="true" signature="1664:1725" placeholder="INSERT INTO ..." />
-                <marker date="1451144709736" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
-                <marker date="1451144709736" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
-                <marker date="1451144709736" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
-                <marker date="1451144709736" expanded="true" signature="2791:2828" placeholder="DELETE FROM ..." />
-                <marker date="1451144709736" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
+                <marker date="1451305086690" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
+                <marker date="1451305086690" expanded="true" signature="1382:1434" placeholder="SELECT Searc..Search_history..." />
+                <marker date="1451305086690" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
+                <marker date="1451305086690" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
+                <marker date="1451305086690" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
+                <marker date="1451305086690" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchHistory.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/classes/searchHistory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15229563">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -80,7 +71,7 @@
       <file leaf-file-name="searchTwitter.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/searchTwitter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
                 <element signature="e#25#39#0#PHP" expanded="true" />
@@ -89,10 +80,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="peopleController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/peopleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+              <folding>
+                <element signature="e#25#70#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/searchController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.692307">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding>
+                <element signature="e#25#70#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="searchFb.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/searchFb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
                 <element signature="e#26#40#0#PHP" expanded="true" />
@@ -101,20 +116,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="form.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/twig/form.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.39977604">
               <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding />
             </state>
@@ -148,11 +153,11 @@
         <option value="$PROJECT_DIR$/classes/fullContact.php" />
         <option value="$PROJECT_DIR$/classes/Database.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/classes/searchController.php" />
-        <option value="$PROJECT_DIR$/classes/peopleController.php" />
-        <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/classes/Search.php" />
         <option value="$PROJECT_DIR$/classes/searchHistory.php" />
+        <option value="$PROJECT_DIR$/classes/Search.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/classes/peopleController.php" />
+        <option value="$PROJECT_DIR$/classes/searchController.php" />
       </list>
     </option>
   </component>
@@ -197,7 +202,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,12 +248,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,20 +381,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/twig/form.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="16" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="16" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
+            <element signature="e#41#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -368,14 +397,12 @@
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <element signature="e#25#43#0#PHP" expanded="true" />
-            <marker date="1451144709736" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
-            <marker date="1451144709736" expanded="true" signature="1382:1434" placeholder="SELECT Name,..People..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1725" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
-            <marker date="1451144709736" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2828" placeholder="DELETE FROM ..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
+            <marker date="1451305086690" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
+            <marker date="1451305086690" expanded="true" signature="1382:1434" placeholder="SELECT Searc..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
+            <marker date="1451305086690" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
+            <marker date="1451305086690" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -428,7 +455,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
+            <element signature="e#41#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -439,14 +466,12 @@
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding>
             <element signature="e#25#43#0#PHP" expanded="true" />
-            <marker date="1451144709736" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
-            <marker date="1451144709736" expanded="true" signature="1382:1434" placeholder="SELECT Name,..People..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1725" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
-            <marker date="1451144709736" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2828" placeholder="DELETE FROM ..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
+            <marker date="1451305086690" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
+            <marker date="1451305086690" expanded="true" signature="1382:1434" placeholder="SELECT Searc..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
+            <marker date="1451305086690" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
+            <marker date="1451305086690" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -514,7 +539,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
+            <element signature="e#41#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -525,14 +550,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#25#43#0#PHP" expanded="true" />
-            <marker date="1451144709736" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
-            <marker date="1451144709736" expanded="true" signature="1382:1434" placeholder="SELECT Name,..People..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1725" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
-            <marker date="1451144709736" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2828" placeholder="DELETE FROM ..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
+            <marker date="1451305086690" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
+            <marker date="1451305086690" expanded="true" signature="1382:1434" placeholder="SELECT Searc..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
+            <marker date="1451305086690" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
+            <marker date="1451305086690" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -565,7 +588,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
+            <element signature="e#41#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -576,14 +599,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#25#43#0#PHP" expanded="true" />
-            <marker date="1451144709736" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
-            <marker date="1451144709736" expanded="true" signature="1382:1434" placeholder="SELECT Name,..People..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1725" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
-            <marker date="1451144709736" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2828" placeholder="DELETE FROM ..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
+            <marker date="1451305086690" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
+            <marker date="1451305086690" expanded="true" signature="1382:1434" placeholder="SELECT Searc..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
+            <marker date="1451305086690" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
+            <marker date="1451305086690" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -616,7 +637,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
+            <element signature="e#41#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -642,14 +663,12 @@
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
             <element signature="e#25#43#0#PHP" expanded="true" />
-            <marker date="1451144709736" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
-            <marker date="1451144709736" expanded="true" signature="1382:1434" placeholder="SELECT Name,..People..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1725" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
-            <marker date="1451144709736" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2828" placeholder="DELETE FROM ..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
+            <marker date="1451305086690" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
+            <marker date="1451305086690" expanded="true" signature="1382:1434" placeholder="SELECT Searc..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
+            <marker date="1451305086690" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
+            <marker date="1451305086690" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -719,66 +738,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/twig/form.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6104046">
           <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/league/route/src/RouteCollection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/peopleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding>
-            <element signature="e#25#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/searchController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="e#25#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/searchFb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#26#40#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/searchTwitter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#25#39#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -790,38 +753,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
+    <entry file="file://$PROJECT_DIR$/classes/searchTwitter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
+            <element signature="e#25#39#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-37.923077">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state vertical-scroll-proportion="-17.653847">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="e#25#43#0#PHP" expanded="true" />
-            <marker date="1451144709736" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
-            <marker date="1451144709736" expanded="true" signature="1382:1434" placeholder="SELECT Name,..People..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1725" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
-            <marker date="1451144709736" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
-            <marker date="1451144709736" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2828" placeholder="DELETE FROM ..." />
-            <marker date="1451144709736" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
+            <marker date="1451305086690" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
+            <marker date="1451305086690" expanded="true" signature="1382:1434" placeholder="SELECT Searc..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="1664:1751" placeholder="INSERT INTO ..." />
+            <marker date="1451305086690" expanded="true" signature="2006:2058" placeholder="SELECT ID FR..Search_history..." />
+            <marker date="1451305086690" expanded="true" signature="2517:2570" placeholder="UPDATE Searc..." />
+            <marker date="1451305086690" expanded="true" signature="2791:2832" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/searchHistory.php">
+    <entry file="file://$PROJECT_DIR$/vendor/nikic/fast-route/src/DataGenerator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15229563">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.32362822">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nikic/fast-route/src/RouteCollector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60918254">
+          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/league/route/src/RouteCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71332586">
+          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/searchFb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#26#40#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/peopleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#25#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/searchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.692307">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding>
+            <element signature="e#41#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/twig/form.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39977604">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding />
         </state>
       </provider>
