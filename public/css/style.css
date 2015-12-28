@@ -31,20 +31,40 @@ body{
     list-style: none;
 }
 
+.results a{
+    text-decoration: none;
+    color: black;
+}
+
 .human {
     padding: 15px;
     margin-top: 10px;
     margin-bottom: 50px;
     border: 1px solid lightgrey;
-    border-radius: 4px;
     height: 100px;
+    border-radius: 4px;
     background-color: white;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.human:hover {
+    background-color: lightgray;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .human img{
     margin-top: -50px;
     height: 50px;
     border-radius: 3px;
+    border: 1px solid lightgrey;
 }
 
 .human span{
@@ -60,4 +80,29 @@ body{
     height: 25px;
     border-radius: 3px;
     box-shadow: 0px 0px 0px;
+}
+
+.profile{
+    border-radius: 3px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid lightgrey;
+    width: 750px;
+    background-color: white;
+}
+
+.image{
+    border-radius: 3px;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid lightgrey;
+}
+
+.info{
+    margin-top: 10px;
+    margin-left: 20px;
 }

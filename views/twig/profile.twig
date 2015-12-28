@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Profile{% endblock %}
+{% block body %}
+    <div class="content">
+
+        <div class="profile">
+            <div class="image"></div>
+            <div class="info">
+                {% if profile['name'] %}<h1>Name: </h1>{{ profile['name'] }} <br><br>  {% endif %}
+                {% if profile['email'] %}<p>Name: </p> {{ profile['email'] }} {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

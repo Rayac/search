@@ -4,12 +4,18 @@ namespace Rayac;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Twig_Environment;
+use Twig_Loader_Filesystem;
 
 class peopleController
 {
     public function action (Request $request, Response $response, array $args)
     {
-        echo $args['email'];
+        $loader = new Twig_Loader_Filesystem('../views/twig');
+        $twig = new Twig_Environment($loader, array('cache' => false));
+        $profile = "";
+
+        echo $twig->render("profile.twig", ['profile' => $profile]);
         return $response;
     }
 
