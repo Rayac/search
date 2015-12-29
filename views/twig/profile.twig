@@ -5,11 +5,28 @@
     <div class="content">
 
         <div class="profile">
-            <div class="image"></div>
+            <div style="background-image: url('{{ profile['photos'][0]['url'] }}') " class="image"></div>
             <div class="info">
-                {% if profile['name'] %}<h1>Name: </h1>{{ profile['name'] }} <br><br>  {% endif %}
-                {% if profile['email'] %}<p>Name: </p> {{ profile['email'] }} {% endif %}
+                {% if profile['contactInfo'] %} <h1>Name: </h1> {{ profile['contactInfo']['fullName'] }} <br>
+                    <br>  {% endif %}
+                {% if profile['demographics'] %}<p>
+                    <b>Location</b>: {{ profile['demographics']['locationDeduced']['country']['name'] }}
+                    , {{ profile['demographics']['locationDeduced']['continent']['name'] }}</p> <br> {% endif %}
+                {% if profile['socialProfiles'] %}
+                    {% for social in profile['socialProfiles'] %}
+                        <p><b>{{ social['typeName'] }}</b>: <a href="{{ social['url'] }}">{{ social['url'] }}</a></p>
+                    {% endfor %}
+                    <br>
+                {% endif %}
+                {% if profile['digitalFootprint']['topics'] %}
+                    <p><b>Likes</b>:
+                        {% for likes in profile['digitalFootprint']['topics'] %}
+                            {{ likes['value'] }},
+                        {% endfor %}
+                    </p>
+                {% endif %}
             </div>
+            <a class="back" href="/">Back to search</a>
         </div>
     </div>
 {% endblock %}

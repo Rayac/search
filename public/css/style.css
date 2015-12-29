@@ -51,7 +51,16 @@ body{
     transition: 0.5s;
 }
 
-.human:hover {
+.hover{
+    background-color: white;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.hover:hover {
     background-color: lightgray;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -100,9 +109,24 @@ body{
     margin-left: auto;
     margin-right: auto;
     border: 2px solid lightgrey;
+    background-size: 100%;
 }
 
 .info{
     margin-top: 10px;
     margin-left: 20px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.back{
+    width: 300px;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 5px;
+    color: black;
+    margin-left: 40%;
+    padding: 3px;
+    margin-bottom: 10px;
+    text-decoration: none;
 }

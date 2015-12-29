@@ -13,9 +13,10 @@ class peopleController
     {
         $loader = new Twig_Loader_Filesystem('../views/twig');
         $twig = new Twig_Environment($loader, array('cache' => false));
-        $profile = "";
 
-        echo $twig->render("profile.twig", ['profile' => $profile]);
+        $profile = new fullContact($args['link']);;
+
+        echo $twig->render("profile.twig", ['profile' => $profile->results()]);
         return $response;
     }
 
