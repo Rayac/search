@@ -6,9 +6,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/fullContact.php" afterPath="$PROJECT_DIR$/classes/fullContact.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/peopleController.php" afterPath="$PROJECT_DIR$/classes/peopleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/twig/profile.twig" afterPath="$PROJECT_DIR$/views/twig/profile.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/searchFb.php" afterPath="$PROJECT_DIR$/classes/searchFb.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/searchTwitter.php" afterPath="$PROJECT_DIR$/classes/searchTwitter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="search.iws" />
@@ -35,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding>
                 <element signature="e#41#86#0#PHP" expanded="true" />
               </folding>
@@ -43,21 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state vertical-scroll-proportion="-10.769231">
+              <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
               <folding>
                 <element signature="e#25#43#0#PHP" expanded="true" />
                 <marker date="1451305086690" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
@@ -74,8 +63,8 @@
       <file leaf-file-name="searchTwitter.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/searchTwitter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.076923">
-              <caret line="32" column="109" selection-start-line="32" selection-start-column="109" selection-end-line="32" selection-end-column="109" />
+            <state vertical-scroll-proportion="-20.923077">
+              <caret line="32" column="109" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="109" />
               <folding>
                 <element signature="e#25#39#0#PHP" expanded="true" />
               </folding>
@@ -83,11 +72,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="searchFb.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/searchFb.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.923077">
+              <caret line="43" column="91" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="peopleController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/peopleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding>
                 <element signature="e#25#70#0#PHP" expanded="true" />
               </folding>
@@ -95,12 +94,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fullContact.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fullContact.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/fullContact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.961538">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-              <folding />
+            <state vertical-scroll-proportion="1.7323629">
+              <caret line="91" column="24" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
+              <folding>
+                <element signature="e#26#44#0#PHP" expanded="true" />
+                <marker date="1451509192047" expanded="true" signature="1083:1144" placeholder="SELECT Searc..." />
+                <marker date="1451509192047" expanded="true" signature="1547:1598" placeholder="SELECT Searc..Search_history..." />
+                <marker date="1451509192047" expanded="true" signature="1834:1938" placeholder="INSERT INTO ..." />
+                <marker date="1451509192047" expanded="true" signature="2208:2259" placeholder="SELECT ID FR..Search_history..." />
+                <marker date="1451509192047" expanded="true" signature="2719:2771" placeholder="UPDATE Searc..." />
+                <marker date="1451509192047" expanded="true" signature="2992:3032" placeholder="DELETE FROM ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="searchController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/searchController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5520717">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
                 <element signature="e#25#70#0#PHP" expanded="true" />
               </folding>
@@ -131,7 +138,7 @@
         <entry file="file://$PROJECT_DIR$/views/twig/form.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-11.769231">
-              <caret line="18" column="145" selection-start-line="18" selection-start-column="145" selection-end-line="18" selection-end-column="145" />
+              <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -142,9 +149,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-18.307692">
               <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-              <folding>
-                <element signature="e#157#224#0#HTML" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,20 +173,20 @@
         <option value="$PROJECT_DIR$/views/twig/base.html" />
         <option value="$PROJECT_DIR$/views/twig/style.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/classes/searchFb.php" />
         <option value="$PROJECT_DIR$/classes/SearchInterface.php" />
         <option value="$PROJECT_DIR$/classes/Database.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/classes/searchHistory.php" />
-        <option value="$PROJECT_DIR$/classes/Search.php" />
-        <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/classes/fullContact.php" />
-        <option value="$PROJECT_DIR$/classes/peopleController.php" />
-        <option value="$PROJECT_DIR$/classes/searchTwitter.php" />
         <option value="$PROJECT_DIR$/views/twig/profile.twig" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/classes/Search.php" />
         <option value="$PROJECT_DIR$/views/twig/form.twig" />
+        <option value="$PROJECT_DIR$/classes/searchTwitter.php" />
+        <option value="$PROJECT_DIR$/classes/searchFb.php" />
         <option value="$PROJECT_DIR$/classes/searchController.php" />
+        <option value="$PROJECT_DIR$/classes/peopleController.php" />
+        <option value="$PROJECT_DIR$/classes/fullContact.php" />
       </list>
     </option>
   </component>
@@ -424,7 +429,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#26#40#0#PHP" expanded="true" />
+            <element signature="e#26#40#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -486,7 +491,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
           <folding>
-            <element signature="e#26#40#0#PHP" expanded="true" />
+            <element signature="e#26#40#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -747,31 +752,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/searchFb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
-          <folding>
-            <element signature="e#26#40#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="e#41#86#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -799,18 +784,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/fullContact.php">
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.961538">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#41#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/twig/profile.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.307692">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state vertical-scroll-proportion="-10.769231">
+          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
           <folding>
             <element signature="e#25#43#0#PHP" expanded="true" />
             <marker date="1451305086690" expanded="true" signature="916:978" placeholder="SELECT Searc..." />
@@ -823,58 +826,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/twig/profile.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.307692">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="e#157#224#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/twig/form.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="145" selection-start-line="18" selection-start-column="145" selection-end-line="18" selection-end-column="145" />
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/searchTwitter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.076923">
-          <caret line="32" column="109" selection-start-line="32" selection-start-column="109" selection-end-line="32" selection-end-column="109" />
+        <state vertical-scroll-proportion="-20.923077">
+          <caret line="32" column="109" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="109" />
           <folding>
             <element signature="e#25#39#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/peopleController.php">
+    <entry file="file://$PROJECT_DIR$/classes/searchFb.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="-20.923077">
+          <caret line="43" column="91" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/searchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="e#25#70#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/searchController.php">
+    <entry file="file://$PROJECT_DIR$/classes/peopleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5520717">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
             <element signature="e#25#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/fullContact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7323629">
+          <caret line="91" column="24" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
+          <folding>
+            <element signature="e#26#44#0#PHP" expanded="true" />
+            <marker date="1451509192047" expanded="true" signature="1083:1144" placeholder="SELECT Searc..." />
+            <marker date="1451509192047" expanded="true" signature="1547:1598" placeholder="SELECT Searc..Search_history..." />
+            <marker date="1451509192047" expanded="true" signature="1834:1938" placeholder="INSERT INTO ..." />
+            <marker date="1451509192047" expanded="true" signature="2208:2259" placeholder="SELECT ID FR..Search_history..." />
+            <marker date="1451509192047" expanded="true" signature="2719:2771" placeholder="UPDATE Searc..." />
+            <marker date="1451509192047" expanded="true" signature="2992:3032" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>

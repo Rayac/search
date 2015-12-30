@@ -41,7 +41,8 @@ class searchFb implements SearchInterface
                     'Name' => $node->filter('.instant_search_title')->text(),
                     'ImageURL' => $node->filter('.img')->attr('src'),
                     'ProfileURL' => $node->filter('._8o')->attr('href'),
-                    'Source' => "From Facebook"
+                    'link' => substr(strrchr($node->filter('._8o')->attr('href'), "/"), 1),
+                    'Source' => "facebook"
                 ];
             });
         }

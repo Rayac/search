@@ -13,8 +13,8 @@ class peopleController
     {
         $loader = new Twig_Loader_Filesystem('../views/twig');
         $twig = new Twig_Environment($loader, array('cache' => false));
-
-        $profile = new fullContact($args['link']);;
+        $pdo = Database::getPDO();
+        $profile = new fullContact($args, $pdo);;
 
         echo $twig->render("profile.twig", ['profile' => $profile->results()]);
         return $response;

@@ -31,7 +31,7 @@ class searchTwitter implements SearchInterface
                 'ImageURL' => $node->filter('.ProfileCard-avatarImage')->attr('src'),
                 'ProfileURL' => "https://twitter.com" . $node->filter('.ProfileNameTruncated-link')->attr('href'),
                 'link' => substr(strrchr($node->filter('.ProfileNameTruncated-link')->attr('href'), "/"), 1),
-                'Source' => "From Twitter"
+                'Source' => "twitter"
             ];
 //            $this->profileSearch("https://twitter.com" . $node->filter('.ProfileNameTruncated-link')->attr('href'));
         });

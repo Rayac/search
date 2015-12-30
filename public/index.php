@@ -8,7 +8,7 @@ $router = new League\Route\RouteCollection;
 
 $router->addRoute('GET', '/', 'Rayac\searchController::action');
 $router->addRoute('POST', '/', 'Rayac\searchController::find');
-$router->addRoute('GET', '/{link}', 'Rayac\peopleController::action');
+$router->addRoute('GET', '/{link}!{from}', 'Rayac\peopleController::action');
 
 $dispatcher = $router->getDispatcher();
 $request = Request::createFromGlobals();

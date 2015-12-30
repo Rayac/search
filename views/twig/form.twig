@@ -16,7 +16,7 @@
                 {% for website in websites %}
                     {% for websit in website %}
                     <li>
-                        {% if websit['Description'] %}<a href="/{{ websit['link'] }}">{% endif %}<div class="human {% if websit['Description'] %}hover{% endif %}">
+                        <a href="/{{ websit['link'] }}!{{ websit['Source'] }}"><div class="human hover">
 
                             <img src="{{ websit['ImageURL'] }}" alt="Profile pic">
                             <p>
@@ -24,7 +24,7 @@
                                 {% if websit['Description'] %}<br><span>Description:</span> {{ websit['Description'] }} {% endif %}
                                 {% if websit['links'] %}<br><span>Description:</span> {{ websit['links'] }} {% endif %}
                             </p>
-                        </div>{% if websit['Description'] %}</a>{% endif %}
+                        </div></a>
                     </li>
                         {% endfor %}
                 {% endfor %}
